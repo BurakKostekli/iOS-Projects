@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FyH-pK-VC8">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ürünler-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Anasayfa" customModule="Products" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qxn-Xh-IfS">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="urunlerHucre" id="kWe-rj-Vu8" customClass="UrunlerHucre" customModule="Products" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kWe-rj-Vu8" id="ckW-Ry-enw">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcD-ST-UV4">
+                                                    <rect key="frame" x="20" y="11" width="353" height="158"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-XP-Ueo">
+                                                            <rect key="frame" x="16" y="15" width="128" height="128"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="128" id="RVw-aU-d5R"/>
+                                                                <constraint firstAttribute="width" constant="128" id="lWs-Oa-vuR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="f25-R9-Dx6">
+                                                            <rect key="frame" x="160" y="20.666666666666664" width="129.33333333333337" height="116.66666666666669"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iphone 13 128GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mje-Z8-bSq">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="129.33333333333334" height="20.333333333333332"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36999 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-cQ-y3O">
+                                                                    <rect key="frame" x="0.0" y="36.333333333333329" width="111.33333333333333" height="30"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bQ-5K-l5E">
+                                                                    <rect key="frame" x="0.0" y="82.333333333333329" width="128" height="34.333333333333329"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE"/>
+                                                                    <connections>
+                                                                        <action selector="butonSepeteEkle:" destination="kWe-rj-Vu8" eventType="touchUpInside" id="FZx-Ra-SDQ"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="f25-R9-Dx6" firstAttribute="centerY" secondItem="BcD-ST-UV4" secondAttribute="centerY" id="Iuz-Fw-glz"/>
+                                                        <constraint firstItem="f25-R9-Dx6" firstAttribute="leading" secondItem="dGt-XP-Ueo" secondAttribute="trailing" constant="16" id="tdQ-YL-0Pn"/>
+                                                        <constraint firstItem="dGt-XP-Ueo" firstAttribute="leading" secondItem="BcD-ST-UV4" secondAttribute="leading" constant="16" id="u3T-5c-OPv"/>
+                                                        <constraint firstItem="dGt-XP-Ueo" firstAttribute="centerY" secondItem="BcD-ST-UV4" secondAttribute="centerY" id="yso-IW-HCh"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BcD-ST-UV4" secondAttribute="bottom" id="9gI-z5-ttq"/>
+                                                <constraint firstItem="BcD-ST-UV4" firstAttribute="top" secondItem="ckW-Ry-enw" secondAttribute="topMargin" id="ANX-OA-6X6"/>
+                                                <constraint firstItem="BcD-ST-UV4" firstAttribute="leading" secondItem="ckW-Ry-enw" secondAttribute="leadingMargin" id="I25-Lr-ASq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BcD-ST-UV4" secondAttribute="trailing" id="Vb5-ct-TrJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hucreArkaplan" destination="BcD-ST-UV4" id="zFv-ev-iDo"/>
+                                            <outlet property="imageViewUrun" destination="dGt-XP-Ueo" id="SeZ-Kg-iLp"/>
+                                            <outlet property="labelUrunAd" destination="mje-Z8-bSq" id="0EJ-B0-oeA"/>
+                                            <outlet property="labelUrunFiyat" destination="8vd-cQ-y3O" id="j5M-yU-lvn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qxn-Xh-IfS" secondAttribute="bottom" id="6he-CA-udy"/>
+                            <constraint firstItem="Qxn-Xh-IfS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N4A-w3-AcM"/>
+                            <constraint firstItem="Qxn-Xh-IfS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vhd-av-PJh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qxn-Xh-IfS" secondAttribute="trailing" id="wiO-ar-04J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ürünler" id="Lo8-4E-LH4"/>
+                    <connections>
+                        <outlet property="urunlerTableView" destination="Qxn-Xh-IfS" id="d1x-2E-PRS"/>
+                        <segue destination="YdO-nk-zSf" kind="show" identifier="toDetay" id="5yr-Mo-Ce5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
+        </scene>
+        <!--Detay Sayfa-->
+        <scene sceneID="jtc-fv-tDI">
+            <objects>
+                <viewController id="YdO-nk-zSf" customClass="DetaySayfa" customModule="Products" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="87A-ie-CFp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="q1R-eA-C9M">
+                                <rect key="frame" x="96.666666666666686" y="187" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="HGP-QO-Y0U"/>
+                                    <constraint firstAttribute="width" constant="200" id="cbl-OR-ghu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMF-7y-OSV">
+                                <rect key="frame" x="32" y="751" width="329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SEPETE EKLE"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iphone 13 128GB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQk-xm-6lW">
+                                <rect key="frame" x="80" y="419" width="233" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="36999 TL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyJ-nI-Ro4">
+                                <rect key="frame" x="118.66666666666669" y="487" width="156" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bgn-X6-9j2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kyJ-nI-Ro4" firstAttribute="top" secondItem="BQk-xm-6lW" secondAttribute="bottom" constant="32" id="1f0-Dc-qO6"/>
+                            <constraint firstItem="q1R-eA-C9M" firstAttribute="centerX" secondItem="87A-ie-CFp" secondAttribute="centerX" id="Byw-Ns-k9H"/>
+                            <constraint firstItem="bgn-X6-9j2" firstAttribute="trailing" secondItem="TMF-7y-OSV" secondAttribute="trailing" constant="32" id="DF0-5h-NTu"/>
+                            <constraint firstItem="kyJ-nI-Ro4" firstAttribute="centerX" secondItem="87A-ie-CFp" secondAttribute="centerX" id="HDY-ir-pEK"/>
+                            <constraint firstItem="BQk-xm-6lW" firstAttribute="centerX" secondItem="87A-ie-CFp" secondAttribute="centerX" id="Ycn-7g-gmM"/>
+                            <constraint firstItem="TMF-7y-OSV" firstAttribute="leading" secondItem="bgn-X6-9j2" secondAttribute="leading" constant="32" id="b7T-eO-xc6"/>
+                            <constraint firstItem="bgn-X6-9j2" firstAttribute="bottom" secondItem="TMF-7y-OSV" secondAttribute="bottom" constant="32" id="msw-VX-9iB"/>
+                            <constraint firstItem="BQk-xm-6lW" firstAttribute="top" secondItem="q1R-eA-C9M" secondAttribute="bottom" constant="32" id="sgt-4v-lPp"/>
+                            <constraint firstItem="q1R-eA-C9M" firstAttribute="top" secondItem="bgn-X6-9j2" secondAttribute="top" constant="32" id="xUQ-tk-gi5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IIz-hl-tUN"/>
+                    <connections>
+                        <outlet property="imageViewUrun" destination="q1R-eA-C9M" id="SZc-HH-hvX"/>
+                        <outlet property="labelUrunAd" destination="BQk-xm-6lW" id="zFN-WZ-eIJ"/>
+                        <outlet property="labelUrunFiyat" destination="kyJ-nI-Ro4" id="S5G-nq-qDC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IfE-Az-NVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1794.6564885496182" y="-35.211267605633807"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ghk-h6-U94">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FyH-pK-VC8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="lif-8t-Nk9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7sk-10-MOU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg9-Wc-6Mp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="-35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="telefon" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
