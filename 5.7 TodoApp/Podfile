@@ -1,0 +1,27 @@
+platform :ios, '15.6'
+
+target 'TodoApp' do
+  use_frameworks!
+
+  # Pods for TodoApp
+  pod 'RealmSwift'
+  pod 'ChameleonFramework/Swift', :git=> 'https://github.com/wowansm/Chameleon', :branch => 'swift5'
+
+end
+
+
+# Adding post_install hook to set deployment target for all pods
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.6'
+    end
+  end
+end
+
+
+
+
+# Sample :
+#  pod 'CLTypingLabel', '~> 0.4.0'
+
