@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; configuration.title = "Sausage"; ObjectID = "1Rc-bt-WEr"; */
+"1Rc-bt-WEr.configuration.title" = "Sucuk";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1Rc-bt-WEr"; */
+"1Rc-bt-WEr.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Delivery"; ObjectID = "3Te-Vq-tHV"; */
+"3Te-Vq-tHV.text" = "Teslimat";
+
+/* Class = "UILabel"; text = "$5.98"; ObjectID = "KJC-Z4-C42"; */
+"KJC-Z4-C42.text" = "175.5₺";
+
+/* Class = "UILabel"; text = "Total: $5.98"; ObjectID = "Mxj-20-TyW"; */
+"Mxj-20-TyW.text" = "Toplam: 175.5₺";
+
+/* Class = "UIButton"; configuration.title = "ADD TO CART"; ObjectID = "S70-Qp-O8E"; */
+"S70-Qp-O8E.configuration.title" = "Sepete Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S70-Qp-O8E"; */
+"S70-Qp-O8E.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "ORDER!"; ObjectID = "V6r-Wo-Big"; */
+"V6r-Wo-Big.configuration.title" = "Sipariş Ver!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "V6r-Wo-Big"; */
+"V6r-Wo-Big.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Pepper"; ObjectID = "YRC-Q3-kPM"; */
+"YRC-Q3-kPM.configuration.title" = "Biber";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YRC-Q3-kPM"; */
+"YRC-Q3-kPM.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Meat lover, get ready to meet your pizza !"; ObjectID = "aoP-d9-L5p"; */
+"aoP-d9-L5p.text" = "Et sever, pizzanla tanışmaya hazırlan!";
+
+/* Class = "UILabel"; text = "Your Cart"; ObjectID = "dbZ-NC-W2i"; */
+"dbZ-NC-W2i.text" = "Sepetin";
+
+/* Class = "UILabel"; text = "$5.98"; ObjectID = "dlc-S3-Q4l"; */
+"dlc-S3-Q4l.text" = "175.5₺";
+
+/* Class = "UILabel"; text = "20 Min"; ObjectID = "hlL-r8-GHx"; */
+"hlL-r8-GHx.text" = "20 Dakika";
+
+/* Class = "UILabel"; text = "Beef Cheese"; ObjectID = "iXI-ws-5ih"; */
+"iXI-ws-5ih.text" = "Sucuk Sever";
+
+/* Class = "UILabel"; text = "Cheese, Sausage, Pepper"; ObjectID = "lhc-tG-bAB"; */
+"lhc-tG-bAB.text" = "Peynir, Sucuk, Biber";
+
+/* Class = "UIButton"; configuration.title = "Cheese"; ObjectID = "vfc-zQ-slY"; */
+"vfc-zQ-slY.configuration.title" = "Peynir";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vfc-zQ-slY"; */
+"vfc-zQ-slY.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Beef Cheese Pizza"; ObjectID = "xYS-ZE-fXV"; */
+"xYS-ZE-fXV.text" = "Sucuk Sever Pizza";
