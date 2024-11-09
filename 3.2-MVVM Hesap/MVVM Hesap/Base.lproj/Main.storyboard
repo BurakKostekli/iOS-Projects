@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVVM_Hesap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUa-12-Ps1">
+                                <rect key="frame" x="175.66666666666666" y="109" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="num1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1a8-d5-Smh">
+                                <rect key="frame" x="50" y="180" width="293" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="num2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcI-F3-ej9">
+                                <rect key="frame" x="50" y="264" width="293" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgu-5i-wpl">
+                                <rect key="frame" x="49.999999999999993" y="348" width="110.33333333333331" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Summation"/>
+                                <connections>
+                                    <action selector="toplama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k43-mu-ft9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGL-Zb-6sd">
+                                <rect key="frame" x="222" y="348" width="121" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Substraction"/>
+                                <connections>
+                                    <action selector="cikarma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oM-B7-W8b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lcI-F3-ej9" firstAttribute="top" secondItem="1a8-d5-Smh" secondAttribute="bottom" constant="50" id="00M-V6-pBB"/>
+                            <constraint firstItem="kgu-5i-wpl" firstAttribute="top" secondItem="lcI-F3-ej9" secondAttribute="bottom" constant="50" id="ABp-ro-JPM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lcI-F3-ej9" secondAttribute="trailing" constant="50" id="BVR-Ve-SxW"/>
+                            <constraint firstItem="1a8-d5-Smh" firstAttribute="top" secondItem="BUa-12-Ps1" secondAttribute="bottom" constant="50" id="Loa-hj-5l5"/>
+                            <constraint firstItem="kgu-5i-wpl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Pdb-a5-lrc"/>
+                            <constraint firstItem="BUa-12-Ps1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="PwL-aW-pah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1a8-d5-Smh" secondAttribute="trailing" constant="50" id="UZe-VO-88R"/>
+                            <constraint firstItem="1a8-d5-Smh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="YfA-rQ-0gN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LGL-Zb-6sd" secondAttribute="trailing" constant="50" id="bnZ-db-tZS"/>
+                            <constraint firstItem="lcI-F3-ej9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="dHh-Na-VDq"/>
+                            <constraint firstItem="LGL-Zb-6sd" firstAttribute="top" secondItem="lcI-F3-ej9" secondAttribute="bottom" constant="50" id="ib0-eL-Lgf"/>
+                            <constraint firstItem="BUa-12-Ps1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oEe-Nv-G27"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelSonuc" destination="BUa-12-Ps1" id="SGN-q2-Kta"/>
+                        <outlet property="tfSayi1" destination="1a8-d5-Smh" id="cj8-VX-lRd"/>
+                        <outlet property="tfSayi2" destination="lcI-F3-ej9" id="R5Y-R3-jRP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
